@@ -2,11 +2,11 @@ import { INCREMENT, DECREMENT } from '../actions'
 
 const initialState = { value: 0 }
 
-export defailt (state = initialState , action) => {
+export default (state = initialState , action) => {
   switch (action.type) {
-    cace INCREMENT:
+    case INCREMENT:
       return { value:state.value + 1 }
-    cace DECREMENT:
+    case DECREMENT:
       return { value:state.value - 1 }
     default:
       return state
